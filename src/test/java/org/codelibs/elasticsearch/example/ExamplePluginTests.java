@@ -54,7 +54,7 @@ public class ExamplePluginTests extends TestCase {
             final String content = curlResponse.getContentAsString();
             assertNotNull(content);
             final Map<String, Object> contentMap = curlResponse
-                    .getContent(EcrCurl.jsonParser());
+                    .getContent(EcrCurl.jsonParser);
             assertEquals(index, contentMap.get("index"));
             assertTrue(contentMap.get("description").toString()
                     .startsWith("This is a example response:"));
@@ -65,7 +65,7 @@ public class ExamplePluginTests extends TestCase {
             final String content = curlResponse.getContentAsString();
             assertNotNull(content);
             final Map<String, Object> contentMap = curlResponse
-                    .getContent(EcrCurl.jsonParser());
+                    .getContent(EcrCurl.jsonParser);
             assertFalse(contentMap.containsKey("index"));
             assertTrue(contentMap.get("description").toString()
                     .startsWith("This is a example response:"));

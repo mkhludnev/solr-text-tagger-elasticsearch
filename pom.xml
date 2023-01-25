@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<name>elasticsearch-plugin-example</name>
+	<name>solr-text-tagger-elasticsearch-plugin</name>
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.codelibs</groupId>
-	<artifactId>elasticsearch-plugin-example</artifactId>
-	<version>7.13.0-SNAPSHOT</version>
+	<groupId>org.elasticsearch.plugin.texttagger</groupId>
+	<artifactId>solr-text-tagger-elasticsearch-plugin</artifactId>
+	<version>0.1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<description>elasticsearch example plugin</description>
-	<inceptionYear>2011</inceptionYear>
+	<description>Solr Text Tagger Elasticsearch Plugin</description>
+	<inceptionYear>2023</inceptionYear>
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>
@@ -18,13 +18,13 @@
 	</licenses>
 <!-- CODELIBS: BEGIN -->
 	<scm>
-		<connection>scm:git:git@github.com:codelibs/elasticsearch-plugin-example.git</connection>
-		<developerConnection>scm:git:git@github.com:codelibs/elasticsearch-plugin-example.git</developerConnection>
-		<url>https://github.com/codelibs/elasticsearch-plugin-example</url>
+		<connection>scm:git:git@github.com:mkhludnev/solr-text-tagger-elasticsearch.git</connection>
+		<developerConnection>scm:git:git@github.com:mkhludnev/solr-text-tagger-elasticsearch.git</developerConnection>
+		<url>https://github.com/mkhludnev/solr-text-tagger-elasticsearch</url>
 	</scm>
 <!-- CODELIBS: END -->
 	<properties>
-		<elasticsearch.version>7.13.1</elasticsearch.version>
+		<elasticsearch.version>6.8.0</elasticsearch.version>
 		<elasticsearch.plugin.classname>org.codelibs.elasticsearch.example.ExamplePlugin</elasticsearch.plugin.classname>
 		<log4j.version>2.11.1</log4j.version>
 		<maven.compiler.source>1.8</maven.compiler.source>

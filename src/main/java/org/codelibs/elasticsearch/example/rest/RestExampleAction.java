@@ -22,13 +22,10 @@ public class RestExampleAction extends BaseRestHandler {
 
     public RestExampleAction(final Settings settings,
             final RestController controller) {
+        super(settings);
+        controller.registerHandler(GET,"/{index}/_example", this);
+        controller.registerHandler(GET,"/_example", this);
         // nothing
-    }
-
-    @Override
-    public List<Route> routes() {
-        return unmodifiableList(asList(new Route(GET, "/{index}/_example"),
-                new Route(GET, "/_example")));
     }
 
     @Override
